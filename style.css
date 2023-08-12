@@ -1,31 +1,39 @@
 * {
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* So, here in the entire web application, we will be able to use width and height */
 }
 
 body {
     background-color: #292524;
     color: #fafaf9;
     font-family: "Sono", sans-serif;
+    padding: 2.5rem;  /* 40px */
+}
+
+.header {
+    margin-bottom: 2.5rem;  /* 40px */
 }
 
 .fact-form {
     background-color: #44403c;
+    margin-bottom: 2.5rem;  /* 40px */
+    padding: 1rem 2.5rem;  /* 16px 40px */
 }
 
 h1 {
     font-size: 2.625rem;  /* 42 px*/
     text-transform: upercase;
-    text-align: center;
     font-family: "Coiny", sans-serif;
-    color: #fafaf9;
 }
 
 .fact {
     font-size: 1.25rem;  /* 20px */
     line-height: 1.4;  /* Gap between each line is 140% */
     font-family: "Sono", sans-serif;
-    color: #fafaf9;
     background-color: #44403c;
+    margin-bottom: 1rem;  /* 16px */
+    padding: 1rem 1.5rem;  /* 16px 24px */
 }
 
 .tag {
