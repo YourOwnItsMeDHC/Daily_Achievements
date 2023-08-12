@@ -46,4 +46,9 @@ const CATEGORIES = [
   // LINK TO APP SAMPLE DATA: https://docs.google.com/spreadsheets/d/1eeldcA_OwP4DHYEvjG0kDe0cRys-cDPhc_E9P9G1e3I/edit#gid=0
   
   // 👍 🤯 ⛔️
+
+  // *********** Resources ******************
+
+  // Google Fonts - for font-family : https://fonts.google.com/
+  // Tailwing color - for hexadecimal value of various shades of colours : https://tailwindcss.com/docs/customizing-colors
   
