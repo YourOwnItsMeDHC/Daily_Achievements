@@ -41,6 +41,9 @@ h1 {
     font-size: 0.875rem;  /* 14px */
     font-family: "Coiny", sans-serif;
     color: #fafaf9;
+    padding-top: 0.188rem;  /* 3px */
+    padding-left: 0.625rem;  /* 10px */
+    padding-right: 0.625rem;  /* 10px */
 }
 
 ul {
