@@ -49,6 +49,12 @@ h1 {
     background-color: #44403c;
     margin-bottom: 1rem;  /* 16px */
     padding: 1rem 1.5rem;  /* 16px 24px */
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;  /* 24px */
+
+    letter-spacing: -1;
 }
 
 .tag {
@@ -59,6 +65,12 @@ h1 {
     padding-top: 0.188rem;  /* 3px */
     padding-left: 0.625rem;  /* 10px */
     padding-right: 0.625rem;  /* 10px */
+}
+
+.vote-buttons {
+    margin-left: auto;
+    
+    /* It will automatically adjusts margin from left, for the reaction buttons i.e. it will jsut simply stick towards right side */
 }
 
 ul {
