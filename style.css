@@ -76,3 +76,44 @@ h1 {
 ul {
     list-style: none;
 }
+
+/* ********************************************************************************* */
+/* <!-- ****************************** CSS Grid *******************************  --> */
+/* ********************************************************************************* */
+
+.test {
+    background-color: green;
+    margin: 100px;
+
+    display: grid;
+    grid-template-columns: 100px 200px 50px; /* Number of columns and the size of each */
+    grid-template-rows: 100px 300px;  /* Height of each cell */
+    /* Here, 100px will be the height for cells which are at first row */
+    /* Here, 300px will be the height for cells which are at second row */
+
+    column-gap: 30px;  /* Gap between each cell with respect to column */
+    row-gap: 50px;  /* Gap between each cell with respect to row */
+
+    /* Fractional unit (fr) : https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit
+With CSS Grid Layout, we get a new flexible unit: the Fr unit. Fr is a fractional unit and 1fr is for 1 part of the available space. The following are a few examples of the fr unit at work.  */
+
+grid-template-columns: 100px 20px 1fr;  /* Here, 1fr will occupy rest of the space */
+
+/* Below all the column's width is 1fr, hence they are equally sized coulmns */
+grid-template-columns: 1fr 1fr 1fr;
+
+/* Middle column will be double in size as compared to the first and third column */
+grid-template-columns: 1fr 2fr 1fr;
+
+/* Mixed Units : https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit#mixed-units */
+grid-template-columns: 100px 20% 1fr;
+}
+
+.child {
+    background-color: red;
+    font-size: 30px;
+}
+
+/* ********************************************************************************* */
+/* <!-- ****************************** CSS Grid *******************************  --> */
+/* ********************************************************************************* */
