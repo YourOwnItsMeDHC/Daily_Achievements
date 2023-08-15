@@ -110,6 +110,54 @@ ul {
     list-style: none;
 }
 
+
+
+
+
+/* Must Visit : https://www.w3schools.com/css/css_pseudo_classes.asp 
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus */
+
+
+/* Below CSS will only be applied to anchor tag which is having href as an attribute i.e. link
+and it is also having the class with the name "source"
+And, if there is anchor without href, then below CSS would not applied to that */
+/* .source:link {
+    color: red;
+} */
+
+/* But below CSS will be applied to any element (<a>, <h1>, <p>,...) having the class with the name "source" */
+/* .source:visited {
+    color: purple;
+} */
+
+/* .source:hover {
+    color: #3b82f6;
+}
+
+.source:active {
+    color: green;
+} */
+
+
+.source:link, .source:visited {
+    color: #a8a29e;
+    text-decoration: none;  /* To remove underline, which are below the link */
+    margin-left: 0.75rem;  /* 12px */
+    transition: 1s ease-in; 
+    /* Time delay from grey to blue i.e. when moving from normal state to the hovering state */
+    /* Must Visit : https://www.w3schools.com/css/css3_transitions.asp */
+}
+
+.source:hover, .source:active {
+    color: #3b82f6;
+}
+
 /* ********************************************************************************* */
 /* <!-- ****************************** CSS Grid *******************************  --> */
 /* ********************************************************************************* */
