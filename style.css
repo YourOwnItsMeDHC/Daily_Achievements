@@ -113,6 +113,8 @@ h1 {
     padding-top: 0.188rem;  /* 3px */
     padding-left: 0.625rem;  /* 10px */
     padding-right: 0.625rem;  /* 10px */
+
+    border-radius: 100px;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
 }
 
 .vote-buttons {
