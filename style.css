@@ -241,6 +241,8 @@ Conic Gradients (rotated around a center point) */
     transition: 0.3s;
 
     border-radius: 100px;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+
+    cursor: pointer;       /* https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
 }
 
 .btn:hover {
