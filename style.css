@@ -237,6 +237,8 @@ Conic Gradients (rotated around a center point) */
 
     /* Whatever the effects which we are adding to these button, has to be done in the below specified(transition) time span i.e. 0.3 seconds */
     transition: 0.3s;
+
+    border-radius: 100px;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
 }
 
 .btn:hover {
