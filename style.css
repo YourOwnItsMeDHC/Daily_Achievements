@@ -62,12 +62,18 @@ body {
 .log-trans:hover {
     color:antiquewhite;
     transition: 2s ease-in;
+    transform: skew(25deg);      /* https://www.w3schools.com/cssref/css3_pr_transform.php */
 }
 
 /* CSS Combinators ==> descendant selector (space)  ==> https://www.w3schools.com/css/css_combinators.asp */
 .logo img {
     width: 4.25rem;  /* 68px */
     height: 4.25rem;  /* 68px */
+}
+
+.logo img:hover {
+    transform: scale(110%) rotate(340deg);
+    /* scale(110%) ==> make the size of button 110% bigger */
 }
 
 
@@ -228,11 +234,21 @@ Conic Gradients (rotated around a center point) */
 
     background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
     color: inherit;
+
+    /* Whatever the effects which we are adding to these button, has to be done in the below specified(transition) time span i.e. 0.3 seconds */
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(110%) rotate(-2deg);
+    /* scale(110%) ==> make the size of button 110% bigger */
+    /* rotate(-2deg) ==> Rotate the button by 2 degrees from the left side*/
+    /* rotate(2deg) ==> Rotate the button by 2 degrees from the right side*/
 }
 
 .btn-large {
     font-size: 1.25rem;  /* 20px */
-    padding-inline-start: 1.25rem 2rem 1.063rem;  /* Top LeftRight Bottom */ /* 20px 32px 17px */
+    padding: 1.25rem 2rem 1.063rem;  /* Top LeftRight Bottom */ /* 20px 32px 17px */
 }
 
 .btn-all-categories {
