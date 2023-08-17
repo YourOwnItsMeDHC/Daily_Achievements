@@ -121,6 +121,32 @@ h1 {
     margin-left: auto;
     
     /* It will automatically adjusts margin from left, for the reaction buttons i.e. it will jsut simply stick towards right side */
+    display: flex;
+    gap: 8px;
+
+    flex-shrink: 0;
+    /* Problem : When the size of screen gets smaller, then the value comes below the emoji, in that voting
+    buttons. But, we don't want these to be happen.
+    Solution : Hence, if we do "flex-shrink: 0", then it won'tget shrink i.e. values will always be there beside the emojis */
+}
+
+
+.vote-buttons button {
+    border: none;
+    background-color: #78716c;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 100px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+    background-color: #292524;
 }
 
 ul {
