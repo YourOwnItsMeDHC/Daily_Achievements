@@ -30,18 +30,6 @@ body {
   justify-content: space-between;
 }
 
-.fact-form {
-  background-color: #44403c;
-  margin-bottom: 2.5rem; /* 40px */
-  padding: 16px 32px; /* 16px 40px */
-
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  border-radius: 16px;
-}
-
 .main {
   display: grid;
   grid-template-columns: 15.625rem 1fr; /* 250px 1fr */
@@ -287,6 +275,19 @@ Conic Gradients (rotated around a center point) */
   background-image: none;
 }
 
+/* FORM */
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 2.5rem; /* 40px */
+  padding: 16px 32px; /* 16px 40px */
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  border-radius: 16px;
+}
+
 .fact-form input,
 .fact-form select {
   width: 220px;
@@ -321,4 +322,39 @@ Must visit : https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child */
   font-weight: 600;
   font-size: 18px;
   margin-right: 18px;
+}
+
+/* If width of a device is less than 1200px, then below effects will be added i.e.
+Below effect will be there onto the screen of a device,until the width of the screen is not more than 1200px i.e.
+max to max 1200px has to be there of screen width, to these effect to be added.
+If width is more than 1200px, then below effect won't be get added */
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch; /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }
